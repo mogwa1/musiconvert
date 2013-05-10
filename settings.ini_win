@@ -1,0 +1,189 @@
+(dp1
+S'lamecbr'
+p2
+V192 kbit/s
+p3
+sS'lamevbr'
+p4
+VV2 (~ 190 kbit/s)
+p5
+sS'ingainrefdir'
+p6
+(lp7
+VC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre
+p8
+asS'tagfields'
+p9
+(lp10
+VARTIST
+p11
+aVTITLE
+p12
+aVALBUM
+p13
+aVDATE
+p14
+aVTRACKNUMBER
+p15
+aVTRACKTOTAL
+p16
+aVDISCNUMBER
+p17
+aVDISCTOTAL
+p18
+aVALBUMARTIST
+p19
+aVPERFORMER
+p20
+aVCOMPOSER
+p21
+asS'lamebitrate'
+p22
+V-V2
+p23
+sS'overwrite'
+p24
+I01
+sS'indir'
+p25
+(lp26
+g8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+ag8
+asS'outname'
+p27
+Vmp3
+p28
+sS'recursive'
+p29
+I01
+sS'nrprocesses'
+p30
+NsS'codecnames'
+p31
+(Vflac
+Vmp3
+tp32
+sS'inname'
+p33
+Vflac
+p34
+sS'metaflacpath'
+p35
+VC:\u005cProgram Files (x86)\u005cFLAC\u005cmetaflac.exe
+p36
+sS'files'
+p37
+(lp38
+VC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c01 - .calibre - E.L.I.T.E..flac
+p39
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c02 - .calibre - Karma.flac
+p40
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c03 - .calibre - Meritocracy.flac
+p41
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c04 - .calibre - Dialogue.flac
+p42
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c05 - .calibre - The Frontline.flac
+p43
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c06 - .calibre - Calibre.flac
+p44
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c07 - .calibre - Antidote.flac
+p45
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c08 - .calibre - The Rapist.flac
+p46
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c09 - .calibre - The Load Off.flac
+p47
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c10 - .calibre - Imposter.flac
+p48
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c11 - .calibre - Complex.flac
+p49
+aVC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo\u005c12 - .calibre - Home of Titans.flac
+p50
+asS'flat'
+p51
+I00
+sS'currentfile'
+p52
+Vsettings.ini
+p53
+sS'lameopts'
+p54
+V-V2
+p55
+sS'gain'
+p56
+Valbum
+p57
+sS'mp3gainpath'
+p58
+VC:\u005cProgram Files (x86)\u005cMP3Gain\u005cmp3gain.exe
+p59
+sS'lameabr'
+p60
+I192
+sS'id3mapping'
+p61
+(dp62
+g13
+VTALB
+p63
+sg20
+VTXXX PERFORMER
+p64
+sg18
+VTXXX TOTALDISCS
+p65
+sg11
+VTPE1
+p66
+sg12
+VTIT2
+p67
+sg16
+VTXXX TOTALTRACKS
+p68
+sg19
+VTPE2
+p69
+sg21
+VTCOM
+p70
+sg14
+VTYER
+p71
+sg15
+VTRCK
+p72
+sg17
+VTPOS
+p73
+ssS'outdir'
+p74
+VC:\u005cPersonal\u005cconvertor\u005cout
+p75
+sS'lameextraopts'
+p76
+V
+sS'ingaindirs'
+p77
+(lp78
+VC:\u005cMusic\u005cflac\u005czzz - others\u005c.calibre\u005c.calibre - 2002 - Kill the Logo
+p79
+asS'flacpath'
+p80
+VC:\u005cProgram Files (x86)\u005cFLAC\u005cflac.exe
+p81
+sS'lamepath'
+p82
+VC:\u005cProgram Files (x86)\u005cLame\u005clame.exe
+p83
+s.
