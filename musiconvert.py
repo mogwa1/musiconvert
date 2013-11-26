@@ -25,19 +25,24 @@ import os
 import sys
 import multiprocessing as mp
 import oxygenicons
+import configparser
 from musiconvert_func import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 
 class MainWindow(QMainWindow):
-
-    def __init__(self):
-        super().__init__()
+    def __init__(self, *args, **kwargs):
+        if args:
+            self.config = args[-1]
+            args = [args[i] for i in range(len(args)-1)]
+        super().__init__(*args, **kwargs)
         self.fileListView = None
         self.initUI()
+        self.move(int(self.config['GEOMETRY']['x']), int(self.config['GEOMETRY']['y']))
+        self.resize(int(self.config['GEOMETRY']['width']), int(self.config['GEOMETRY']['height']))
         self.show()
-
+            
     def initUI(self):
 
         # check if a default theme exists, if not load oxygen icons
@@ -102,6 +107,16 @@ class MainWindow(QMainWindow):
         self.setWindowIcon(QIcon.fromTheme('applications-multimedia'))
 
 
+    def closeEvent(self, event):
+        self.config['GEOMETRY'] = {'width' : self.width(),
+                                   'height': self.height(),
+                                   'x'     : self.x(),
+                                   'y'     : self.y()}
+        with open('musiconvert.ini', 'w') as configfile:
+            self.config.write(configfile)
+        super().close()
+
+
     ############################
     #  Define 'slots'
     ############################
@@ -121,6 +136,7 @@ class MainWindow(QMainWindow):
                                                 QFileDialog.ShowDirsOnly
                                                 | QFileDialog.DontResolveSymlinks)
         self.fileListView.addItems(os.path.abspath(item))
+
 
 
 class fileListWidget(QTreeWidget):
@@ -262,10 +278,14 @@ class file(QTreeWidgetItem):
         else:
             return ''
 
+
                 
 def main():
+    config = configparser.ConfigParser()
+    with open('musiconvert.ini', 'r') as configfile:
+        config.read_file(configfile)
     app = QApplication(sys.argv)
-    mwd = MainWindow()   
+    mwd = MainWindow(config)   
     sys.exit(app.exec_())
 
 
