@@ -282,8 +282,14 @@ class file(QTreeWidgetItem):
                 
 def main():
     config = configparser.ConfigParser()
-    with open('musiconvert.ini', 'r') as configfile:
-        config.read_file(configfile)
+    try:
+        with open('musiconvert.ini', 'r') as configfile:
+            config.read_file(configfile)
+    except:
+        config['GEOMETRY'] = {'width' : 200,
+                              'height': 300,
+                              'x'     : 50,
+                              'y'     : 50}
     app = QApplication(sys.argv)
     mwd = MainWindow(config)   
     sys.exit(app.exec_())
